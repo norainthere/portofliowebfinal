@@ -1,47 +1,46 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-family: 'Kosugi', sans-serif;
+    font-weight: 500;  /* Updated font-weight to 500 as CSS font-weight values are typically in increments of 100 */
     background-color: #E36564;
-  }
-  
-  header {
+}
+
+header {
     padding: 20px;
     background-color: #f0f0f0;
-  }
-  
-  #logo-container {
+}
+
+#logo-container {
     display: flex;
     align-items: center;
     text-decoration: none;
-  }
-  
-  #logo {
+}
+
+#logo {
     max-width: 50px;
     margin-right: 10px;
-  }
-  
-  #artist-name {
+}
+
+#artist-name {
     font-size: 24px;
     color: #333;
-  }
-  
-  #horizontal-gallery {
+}
+
+#horizontal-gallery {
     display: flex;
     overflow-x: auto;
-  }
-  
-  #horizontal-gallery img {
+}
+
+#horizontal-gallery img {
     margin-right: 10px; /* Adjust spacing between images */
-  }
-  
-  #store-gallery {
+}
+
+#store-gallery {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  #store-gallery a {
+}
+
+#store-gallery a {
     margin: 10px; /* Adjust spacing between store items */
-  }
-  
+}
