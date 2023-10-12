@@ -1,0 +1,21 @@
+#horizontal-gallery {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#horizontal-gallery img {
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#store-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#store-gallery a {
+    margin: 10px;
+}
