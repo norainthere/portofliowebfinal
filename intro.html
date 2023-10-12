@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<style>
+    .intro-page {
+        height: 100vh;
+        background-image: url('/assets/images/intro-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .enter-button {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .enter-button:hover {
+        background-color: #f0f0f0;
+    }
+</style>
+
+<div class="intro-page">
+    <button class="enter-button" onclick="window.location.href='/index.html'">Enter</button>
+</div>
