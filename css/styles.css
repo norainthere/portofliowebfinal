@@ -7,8 +7,8 @@ body {
 }
 
 header {
-    padding: 20px;
-    background-color: #f0f0f0;
+    padding: 40px;
+    background-color: #E7E8EB;
 }
 
 #logo-container {
@@ -18,21 +18,25 @@ header {
 }
 
 #logo {
-    max-width: 50px;
+    max-width: 150px;
     margin-right: 10px;
 }
 
 #artist-name {
-    font-size: 24px;
+    font-size: 72px;
     color: #333;
 }
 
 #horizontal-gallery {
     display: flex;
     overflow-x: auto;
+    white-space: nowrap; /* Prevents wrapping onto new lines */
 }
 
 #horizontal-gallery img {
+    max-width: 200px; /* or whatever maximum width you prefer */
+    max-height: 200px; /* or whatever maximum height you prefer */
+    height: auto;
     margin-right: 10px; /* Adjust spacing between images */
 }
 

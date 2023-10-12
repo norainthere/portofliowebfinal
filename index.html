@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MUSUME</title>
 <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,17 +16,13 @@
   </a>
 </header>
 
-<div id="horizontal-gallery" class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="assets/images/image1.jpg" alt="Image 1"></div>
-        <div class="swiper-slide"><img src="assets/images/image2.jpg" alt="Image 2"></div>
-        <!-- ...more slides -->
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Navigation -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+<div id="horizontal-gallery">
+    <img src="assets/images/image1.jpg" alt="Image 1">
+    <img src="assets/images/image2.jpg" alt="Image 2">
+    <img src="assets/images/image3.jpg" alt="Image 3">
+    <img src="assets/images/image4.jpg" alt="Image 4">
+    <img src="assets/images/image5.jpg" alt="Image 5">
+    <!-- ...more images -->
 </div>
 
 <div id="store-gallery">
@@ -42,7 +37,6 @@
     <!-- ...more items -->
 </div>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="js/scripts.js"></script>
+<!-- Removed Swiper JS as it's no longer needed -->
 </body>
 </html>
