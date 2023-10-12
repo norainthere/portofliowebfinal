@@ -1,3 +1,10 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Add your custom styles below this line */
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -20,17 +27,17 @@ nav li {
 /* Horizontal scrolling gallery */
 .gallery {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto; /* Use 'auto' for a more user-friendly scrollbar when needed */
     white-space: nowrap;
     width: 100%;
     max-height: 50vh; /* Restricts the gallery's height to 50% of the viewport height */
 }
 
 .gallery img {
-    max-width: 100%;  /* Ensures image doesn't exceed container width */
-    max-height: 100%;  /* Ensures image doesn't exceed container height */
+    max-width: 100%; /* Ensures image doesn't exceed container width */
+    max-height: 100%; /* Ensures image doesn't exceed container height */
     margin-right: 10px;
-    object-fit: cover;  /* Ensures image maintains aspect ratio */
+    object-fit: cover; /* Ensures image maintains aspect ratio */
 }
 
 /* Adjustments for smaller screens */
