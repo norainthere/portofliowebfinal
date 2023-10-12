@@ -1,21 +1,8 @@
 ---
-# Front matter block
+layout: default
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MUSUME</title>
-<link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css"> <!-- Updated line -->
-</head>
-<body>
-
-{% include header.html %}  <!-- Unchanged line -->
-
-<div id="horizontal-gallery">
+<div id="horizontal-gallery" class="gallery"> <!-- Updated class name -->
     <img src="{{ site.baseurl }}/assets/images/image1.jpg" alt="Image 1">
     <img src="{{ site.baseurl }}/assets/images/image2.jpg" alt="Image 2">
     <img src="{{ site.baseurl }}/assets/images/image3.jpg" alt="Image 3">
@@ -35,6 +22,3 @@
     </div>
     <!-- ...more items -->
 </div>
-
-</body>
-</html>
