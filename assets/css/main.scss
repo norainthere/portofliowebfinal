@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    padding: 40px;
+    padding: 20px;  /* Reduced padding */
     background-color: #E7E8EB;
 }
 
@@ -18,12 +18,12 @@ header {
 }
 
 #logo {
-    max-width: 150px;
+    max-width: 100px;  /* Adjusted max-width */
     margin-right: 10px;
 }
 
 #artist-name {
-    font-size: 72px;
+    font-size: 36px;  /* Adjusted font-size */
     color: #333;
 }
 
