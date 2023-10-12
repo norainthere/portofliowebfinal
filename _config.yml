@@ -1,12 +1,12 @@
 # Site settings
 title: MUSUME
 description: Your website description
-baseurl: "/portofliowebfinal"
-url: "https://norainthere.github.io/
+baseurl: "/portofliowebfinal" # Adjust this to your repository name if using GitHub Pages
+url: "https://norainthere.github.io/"
 
 # Build settings
 markdown: kramdown
-theme: cayman
+theme: jekyll-theme-cayman # Use the correct theme name
 permalink: /:title/
 
 # Include settings
