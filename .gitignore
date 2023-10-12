@@ -1,1 +1,26 @@
+# Ignore the generated site.
 _site/
+
+# Ignore Sass config files
+.sass-cache/
+
+# Ignore Node modules
+node_modules/
+
+# Ignore the configuration file for Jekyll environment
+.jekyll-metadata
+
+# Ignore the gem bundle directory
+/vendor/bundle/
+
+# Ignore the gemfile lock as this can cause issues with different environments
+Gemfile.lock
+
+# Ignore VS Code directory
+.vscode/
+
+# Ignore other unneeded files
+*.swp
+*.bak
+*.tmp
+*.DS_Store
