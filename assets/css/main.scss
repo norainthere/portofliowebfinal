@@ -1,52 +1,65 @@
----
----
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Kosugi', sans-serif;
-    font-weight: 500;  /* Updated font-weight to 500 as CSS font-weight values are typically in increments of 100 */
-    background-color: #E36564;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
-    padding: 20px;  /* Reduced padding */
-    background-color: #E7E8EB;
-}
-
-#logo-container {
     display: flex;
-    align-items: center;
-    text-decoration: none;
+    justify-content: space-between;
+    align-items: left;
 }
 
-#logo {
-    max-width: 100px;  /* Adjusted max-width */
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Horizontal scrolling gallery */
+.gallery {
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+    max-height: 50vh; /* Restricts the gallery's height to 50% of the viewport height */
+}
+
+.gallery img {
+    max-width: 100%;  /* Ensures image doesn't exceed container width */
+    max-height: 100%;  /* Ensures image doesn't exceed container height */
     margin-right: 10px;
+    object-fit: cover;  /* Ensures image maintains aspect ratio */
 }
 
-#artist-name {
-    font-size: 36px;  /* Adjusted font-size */
-    color: #333;
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .gallery {
+        max-height: 40vh;
+    }
 }
 
-#horizontal-gallery {
+/* Introductory page styles */
+.intro-page {
+    height: 100vh;
+    background-image: url('/assets/images/intro-bg.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
-    overflow-x: auto;
-    white-space: nowrap; /* Prevents wrapping onto new lines */
+    justify-content: center;
+    align-items: center;
 }
 
-#horizontal-gallery img {
-    max-width: 200px; /* or whatever maximum width you prefer */
-    max-height: 200px; /* or whatever maximum height you prefer */
-    height: auto;
-    margin-right: 10px; /* Adjust spacing between images */
+.enter-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#store-gallery {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#store-gallery a {
-    margin: 10px; /* Adjust spacing between store items */
+.enter-button:hover {
+    background-color: #f0f0f0;
 }
