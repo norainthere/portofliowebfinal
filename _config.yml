@@ -1,0 +1,38 @@
+# Site settings
+title: MUSUME
+description: Your website description
+baseurl: "/portofliowebfinal"
+url: "https://norainthere.github.io/
+
+# Build settings
+markdown: kramdown
+theme: minima  # or another theme of your choice
+permalink: /:title/
+
+# Include settings
+include:
+  - "_includes"
+  - "_layouts"
+  - "_sass"
+  - "_posts"
+  - "_data"
+
+# Exclude settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Assets settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Plugins (if any)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
