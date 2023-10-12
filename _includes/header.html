@@ -1,6 +1,13 @@
 <header>
-  <a href="{{ site.baseurl }}/index.html" id="logo-container">
-    <img src="{{ site.baseurl }}/assets/images/logo.png" alt="Artist Logo" id="logo">
-    <span id="MUSUME">Artist Name</span>
+  <a href="/home.html" title="Go to homepage">
+    <img src="/assets/images/logo.png" alt="MUSUME Logo">
+    <h1 style="font-family: 'Roboto', sans-serif;">MUSUME</h1>
   </a>
+  <nav>
+    <ul>
+      {% for item in site.data.navigation.main %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
 </header>

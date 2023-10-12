@@ -1,0 +1,13 @@
+main:
+  - title: "About Me"
+    url: "/about/"
+  - title: "Contact"
+    url: "/contact/"
+  - title: "Visual Art"
+    url: "/visual-art/"
+  - title: "Music"
+    url: "/music/"
+  - title: "Product Photography"
+    url: "/product-photography/"
+  - title: "Advertising Work"
+    url: "/advertising-work/"
