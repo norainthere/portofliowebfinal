@@ -1,3 +1,7 @@
+---
+# Front matter block
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,33 +9,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MUSUME</title>
 <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css"> <!-- Updated line -->
 </head>
 <body>
 
-{% include header.html %}  <!-- Updated line -->
+{% include header.html %}  <!-- Unchanged line -->
 
 <div id="horizontal-gallery">
-    <img src="assets/images/image1.jpg" alt="Image 1">
-    <img src="assets/images/image2.jpg" alt="Image 2">
-    <img src="assets/images/image3.jpg" alt="Image 3">
-    <img src="assets/images/image4.jpg" alt="Image 4">
-    <img src="assets/images/image5.jpg" alt="Image 5">
+    <img src="{{ site.baseurl }}/assets/images/image1.jpg" alt="Image 1">
+    <img src="{{ site.baseurl }}/assets/images/image2.jpg" alt="Image 2">
+    <img src="{{ site.baseurl }}/assets/images/image3.jpg" alt="Image 3">
+    <img src="{{ site.baseurl }}/assets/images/image4.jpg" alt="Image 4">
+    <img src="{{ site.baseurl }}/assets/images/image5.jpg" alt="Image 5">
     <!-- ...more images -->
 </div>
 
 <div id="store-gallery">
     <div class="store-item" data-url="https://artistname.bigcartel.com/product/item1">
-        <img src="assets/images/item1.jpg" alt="Item 1">
+        <img src="{{ site.baseurl }}/assets/images/item1.jpg" alt="Item 1">
         <p>Item 1 Description</p>
     </div>
     <div class="store-item" data-url="https://artistname.bigcartel.com/product/item2">
-        <img src="assets/images/item2.jpg" alt="Item 2">
+        <img src="{{ site.baseurl }}/assets/images/item2.jpg" alt="Item 2">
         <p>Item 2 Description</p>
     </div>
     <!-- ...more items -->
 </div>
-
 
 </body>
 </html>

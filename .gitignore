@@ -24,3 +24,8 @@ Gemfile.lock
 *.bak
 *.tmp
 *.DS_Store
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
